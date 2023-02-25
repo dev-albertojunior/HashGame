@@ -6,7 +6,7 @@ namespace HashGame.Entities
         public char X { get; set; }
         public char O { get; set; }
         public char Win { get; set; }
-        public char Tie { get; set; }
+        public string Status { get; set; }
         public char[,] Moves { get; set; } = new char[3, 3];
         public char Turn { get; set; }
         public char InitialTurn { get; set; }
@@ -18,6 +18,7 @@ namespace HashGame.Entities
             X = x;
             O = o;
             InitialTurn = initialTurn;
+            Turn = initialTurn;
         }
 
         public void RestartGame()
@@ -105,7 +106,7 @@ namespace HashGame.Entities
             if (CheckTie()==true)
             {
                 X_Score.AddTies();
-                X_Score.AddLosses();
+                O_Score.AddTies();
             }
             else if (CheckWin('x')==true)
             {

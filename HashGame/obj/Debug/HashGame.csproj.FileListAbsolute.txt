@@ -1,0 +1,12 @@
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\bin\Debug\HashGame.exe.config
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\bin\Debug\HashGame.exe
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\bin\Debug\HashGame.pdb
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.csproj.AssemblyReference.cache
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.Views.Frm_Game.resources
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.Frm_Initialize.resources
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.Properties.Resources.resources
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.csproj.GenerateResource.cache
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.csproj.CoreCompileInputs.cache
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.exe
+C:\Users\engal\OneDrive\Documentos\Projetos Visual Studio\HashGame\HashGame\obj\Debug\HashGame.pdb
