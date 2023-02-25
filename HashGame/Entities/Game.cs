@@ -5,8 +5,6 @@ namespace HashGame.Entities
     {
         public char X { get; set; }
         public char O { get; set; }
-        public char Win { get; set; }
-        public string Status { get; set; }
         public char[,] Moves { get; set; } = new char[3, 3];
         public char Turn { get; set; }
         public char InitialTurn { get; set; }
@@ -32,9 +30,9 @@ namespace HashGame.Entities
                 InitialTurn = 'o';
             }
 
-            for (int row = 0; row < 2; row++)
+            for (int row = 0; row < 3; row++)
             {
-                for (int column = 0; column < 2; column++)
+                for (int column = 0; column < 3; column++)
                 {
                     Moves[row,column] = '\0';
                 }
@@ -92,7 +90,7 @@ namespace HashGame.Entities
             }
 
             // If all positions are filled, check if there's a winner
-            if (CheckWin('x') || CheckWin('o'))
+            if (CheckWin(X) || CheckWin(O))
             {
                 return false; // If there's a winner, it's not a tie game
             }

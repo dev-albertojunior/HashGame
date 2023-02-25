@@ -1,4 +1,5 @@
-﻿using HashGame.Views;
+﻿using HashGame.Entities;
+using HashGame.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,9 +26,24 @@ namespace HashGame
 
         private void Btn_NewGame_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Frm_Game Game = new Frm_Game();
-            Game.Show();
+            if (Txt_Player1.Text != "" && Txt_Player2.Text != "")
+            {
+                this.Hide();
+                Frm_Game StartGame = new Frm_Game();
+
+                StartGame.Lbl_Player1.Text = Txt_Player1.Text;
+                StartGame.Lbl_Player2.Text = Txt_Player2.Text;
+                StartGame.Show();
+            }
+            else
+            {
+                MessageBox.Show("Insert the player's names!!!");
+            }
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

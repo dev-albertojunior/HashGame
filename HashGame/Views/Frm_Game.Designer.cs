@@ -44,6 +44,8 @@
             this.Lbl_Player1_Wins = new System.Windows.Forms.Label();
             this.Lbl_Player2_Wins = new System.Windows.Forms.Label();
             this.Lbl_Tie_Score = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_11
@@ -215,11 +217,33 @@
             this.Lbl_Tie_Score.Text = "0";
             this.Lbl_Tie_Score.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(27, 339);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 28);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Restart Score";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(155, 339);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(102, 28);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "End Game";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Frm_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(288, 348);
+            this.ClientSize = new System.Drawing.Size(288, 391);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Lbl_Tie_Score);
             this.Controls.Add(this.Lbl_Player2_Wins);
             this.Controls.Add(this.Lbl_Player1_Wins);
@@ -237,7 +261,7 @@
             this.Controls.Add(this.Btn_12);
             this.Controls.Add(this.Btn_11);
             this.Name = "Frm_Game";
-            this.Text = "Frm_Game";
+            this.Text = "New Game";
             this.Load += new System.EventHandler(this.Frm_Game_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,11 +280,13 @@
         private System.Windows.Forms.Button Btn_32;
         private System.Windows.Forms.Button Btn_31;
         private System.Windows.Forms.Label Lbl_Score;
-        private System.Windows.Forms.Label Lbl_Player1;
-        private System.Windows.Forms.Label Lbl_Player2;
         private System.Windows.Forms.Label Lbl_Ties;
         private System.Windows.Forms.Label Lbl_Player1_Wins;
         private System.Windows.Forms.Label Lbl_Player2_Wins;
         private System.Windows.Forms.Label Lbl_Tie_Score;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Label Lbl_Player1;
+        public System.Windows.Forms.Label Lbl_Player2;
     }
 }

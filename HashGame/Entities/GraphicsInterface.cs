@@ -62,18 +62,18 @@ namespace HashGame.Entities
             Btn_33.Text = "";
         }
 
-        public void ShowResult(Game game)
+        public void ShowResult(Game game, Label player1, Label player2)
         {
             if (game.CheckWin(game.O)==true)
             {
-                MessageBox.Show("Player 1 wins!!!");
+                MessageBox.Show(player1.Text + " wins!!!");
                 game.RefreshScore();
                 game.RestartGame();
 
             }
             else if (game.CheckWin(game.X) == true)
             {
-                MessageBox.Show("Player 2 wins!!!");
+                MessageBox.Show(player2.Text + " wins!!!");
                 game.RefreshScore();
                 game.RestartGame();
             }
@@ -85,13 +85,13 @@ namespace HashGame.Entities
             }
         }
 
-        public void GameStatus(Game game,
+        public void GameStatus(Game game, Label player1, Label player2,
                                Button Btn_11, Button Btn_12, Button Btn_13,
                                Button Btn_21, Button Btn_22, Button Btn_23,
                                Button Btn_31, Button Btn_32, Button Btn_33) { 
-            if (game.CheckWin(game.Turn)==true || game.CheckTie() == true)
+            if (game.CheckWin(game.X)==true || game.CheckWin(game.O) || game.CheckTie() == true)
             {
-                ShowResult(game);
+                ShowResult(game, player1, player2);
                 ClearTable(Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             }
         }

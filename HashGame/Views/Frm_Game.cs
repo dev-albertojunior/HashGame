@@ -32,7 +32,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[0, 0] = NewGame.Turn;
             Interface.ExcutePlay(Btn_11, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -40,7 +40,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[0, 1] = NewGame.Turn;
             Interface.ExcutePlay(Btn_12, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -48,7 +48,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[0, 2] = NewGame.Turn;
             Interface.ExcutePlay(Btn_13, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -56,7 +56,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[1, 0] = NewGame.Turn;
             Interface.ExcutePlay(Btn_21, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -64,7 +64,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[1, 1] = NewGame.Turn;
             Interface.ExcutePlay(Btn_22, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -72,7 +72,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[1, 2] = NewGame.Turn;
             Interface.ExcutePlay(Btn_23, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -80,7 +80,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[2, 0] = NewGame.Turn;
             Interface.ExcutePlay(Btn_31, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -88,7 +88,7 @@ namespace HashGame.Views
         {
             NewGame.Moves[2, 1] = NewGame.Turn;
             Interface.ExcutePlay(Btn_32, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
         }
 
@@ -96,8 +96,22 @@ namespace HashGame.Views
         {
             NewGame.Moves[2, 2] = NewGame.Turn;
             Interface.ExcutePlay(Btn_33, NewGame);
-            Interface.GameStatus(NewGame, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
+            Interface.GameStatus(NewGame, Lbl_Player1, Lbl_Player2, Btn_11, Btn_12, Btn_13, Btn_21, Btn_22, Btn_23, Btn_31, Btn_32, Btn_33);
             Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NewGame.X_Score.RestartScore();
+            NewGame.O_Score.RestartScore();
+            Interface.PrintScore(NewGame, Lbl_Player1_Wins, Lbl_Player2_Wins, Lbl_Tie_Score);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Frm_Initialize initialize= new Frm_Initialize();
+            initialize.Show();
         }
     }
 }
